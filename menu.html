@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - FoodieExpress</title>
+    <link rel="stylesheet" href="ofd.css">
+    
+</head>
+<body>
+    <header>
+    <h1>FoodieExpress</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="menu">
+    <h2 class="om">Our Menu</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showCategory('food')">🍔 Food</button>
+      <button class="tab-btn" onclick="showCategory('sweet')">🍰 Sweet Dishes</button>
+      <button class="tab-btn" onclick="showCategory('drinks')">🥤 Drinks</button>
+    </div>
+
+    <!-- Food Category -->
+    <div class="category food active">
+      <div class="items">
+        <div class="card"><img src="images/burger.avif"><p>Burger - $5</p><button onclick="addToCart('Burger', 5)">Add to Cart</button></div>
+        <div class="card"><img src="images/pizza.avif"><p>Pizza - $8</p><button onclick="addToCart('Pizza', 8)">Add to Cart</button></div>
+        <div class="card"><img src="images/pasta.avif"><p>Pasta - $6</p><button onclick="addToCart('Pasta', 6)">Add to Cart</button></div>
+        <div class="card"><img src="images/frenchfries.avif"><p>French Fries - $3</p><button onclick="addToCart('French Fries', 3)">Add to Cart</button></div>
+        <div class="card"><img src="images/sandwich.avif"><p>Sandwich - $4</p><button onclick="addToCart('Sandwich', 4)">Add to Cart</button></div>
+        <div class="card"><img src="images/salad.avif"><p>Salad - $5</p><button onclick="addToCart('Salad', 5)">Add to Cart</button></div>
+        <div class="card"><img src="images/tacos.avif"><p>Tacos - $7</p><button onclick="addToCart('Tacos', 7)">Add to Cart</button></div>
+        <div class="card"><img src="images/sushi.avif"><p>Sushi - $12</p><button onclick="addToCart('Sushi', 12)">Add to Cart</button></div>
+        <div class="card"><img src="images/steak.avif"><p>Steak - $15</p><button onclick="addToCart('Steak', 15)">Add to Cart</button></div>
+        <div class="card"><img src="images/grilledchicken.avif"><p>Grilled Chicken - $10</p><button onclick="addToCart('Grilled Chicken', 10)">Add to Cart</button></div>
+        <div class="card"><img src="images/curry.avif"><p>Curry - $9</p><button onclick="addToCart('Curry', 9)">Add to Cart</button></div>
+        <div class="card"><img src="images/biryani.avif"><p>Biryani - $11</p><button onclick="addToCart('Biryani', 11)">Add to Cart</button></div>
+        <div class="card"><img src="images/wrap.avif"><p>Wrap - $6</p><button onclick="addToCart('Wrap', 6)">Add to Cart</button></div>
+        <div class="card"><img src="images/noodles.avif"><p>Noodles - $7</p><button onclick="addToCart('Noodles', 7)">Add to Cart</button></div>
+        <div class="card"><img src="images/soup.avif"><p>Soup - $4</p><button onclick="addToCart('Soup', 4)">Add to Cart</button></div>
+        <div class="card"><img src="images/shawarma.avif"><p>Shawarma - $8</p><button onclick="addToCart('Shawarma', 8)">Add to Cart</button></div>
+        <div class="card"><img src="images/falafel.avif"><p>Falafel - $5</p><button onclick="addToCart('Falafel', 5)">Add to Cart</button></div>
+        <div class="card"><img src="images/dumblings.avif"><p>Dumplings - $7</p><button onclick="addToCart('Dumplings', 7)">Add to Cart</button></div>
+        <div class="card"><img src="images/bbq.jpg"><p>BBQ - $14</p><button onclick="addToCart('BBQ', 14)">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <!-- Sweet Dishes Category -->
+    <div class="category sweet">
+      <div class="items">
+        <div class="card"><img src="images/icecream.avif"><p>Ice Cream - $4</p><button onclick="addToCart('Ice Cream', 4)">Add to Cart</button></div>
+        <div class="card"><img src="images/cake.avif"><p>Cake - $6</p><button onclick="addToCart('Cake', 6)">Add to Cart</button></div>
+        <div class="card"><img src="images/donut.avif"><p>Donut - $2</p><button onclick="addToCart('Donut', 2)">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <!-- Drinks Category -->
+    <div class="category drinks">
+      <div class="items">
+        <div class="card"><img src="images/coffee.avif"><p>Coffee - $3</p><button onclick="addToCart('Coffee', 3)">Add to Cart</button></div>
+        <div class="card"><img src="images/juice.avif"><p>Juice - $3</p><button onclick="addToCart('Juice', 3)">Add to Cart</button></div>
+        <div class="card"><img src="images/smoothie.jpg"><p>Smoothie - $5</p><button onclick="addToCart('Smoothie', 5)">Add to Cart</button></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="ofd.js"></script>
+  
+</body>
+</html>
